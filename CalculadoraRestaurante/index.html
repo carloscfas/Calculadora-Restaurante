@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Divisor de Conta de Restaurante</title>
+</head>
+<body>
+    <header>
+        <h1>Divisor de Conta de Restaurante</h1>
+    </header>
+    <main>
+        <div class="form-group">
+            <label for="customer-names">Clientes:</label>
+            <input type="text" id="customer-names" placeholder="Insira os nomes dos clientes (separados por vírgula)">
+        </div>
+        
+        <div id="product-list">
+            <div class="form-group">
+                <label for="product-name">Produto:</label>
+                <input type="text" id="product-name" placeholder="Nome do produto">
+            </div>
+            <div class="form-group">
+                <label for="product-price">Preço:</label>
+                <input type="number" id="product-price" step="0.01" placeholder="Preço do produto">
+            </div>
+            <button id="add-product-btn">Adicionar Produto</button>
+        </div>
+        
+        <div class="calculator">
+            <input type="number" id="tip-input" step="0.01" placeholder="Valor da taxa de serviço (%)">
+            <button id="calculate-btn">Calcular</button>
+        </div>
+        
+        <div id="result" class="result" style="display: none;">
+            <h3>Resultado:</h3>
+            <ul id="result-list" class="result-list"></ul>
+        </div>
+    </main>
+    <footer>
+            <p>Todos os direitos reservados para <a href="https://github.com/carloscfas" target="_blank"><strong>Carlos Felipe</strong></a> © 2023</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
